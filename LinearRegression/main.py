@@ -14,7 +14,7 @@ r = LinearRegression.SimpleRegressor()
 # r.fit(dates_epoch.to_numpy(), opening_prices.to_numpy(), 30)
 r.fit(test_X, test_y, 30)
 predict_X = np.array([0, 1])
-predict_y = r.predict_points(predict_X)
+predict_y = r.predict(predict_X)
 plt.plot(predict_X, predict_y)
 
 plt.savefig("trend.png")

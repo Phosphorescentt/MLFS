@@ -39,8 +39,8 @@ class SimpleRegressor():
 
         self.fitted = True
 
-    def predict_point(self, x_i):
-        return self.m*x_i + self.c
-
-    def predict_points(self, X):
+    def predict(self, X):
         return self.m*X + self.c
+
+    #  def predict_points(self, X):
+        #  return self.m*X + self.c
